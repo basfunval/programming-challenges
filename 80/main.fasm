@@ -1,0 +1,29 @@
+format ELF64 executable 3
+
+macro printf str
+{
+        push rbp
+        xor rax, rax
+        lea rdi, [str]
+        call printf
+        pop rbp
+}
+
+section '.text' executable
+extrn scanf
+extrn printf
+entry start
+start:
+        printf instr
+        
+        mov rax, 60
+        mov rdi, 0
+        syscall
+
+section '.data' readable writeable
+        instr: db "enter number: "
+        infmt: db "%d",0
+        outfmt: db "factorial is: "
+        num: rq 1
+        x: rq 1
+        total: rq 1
