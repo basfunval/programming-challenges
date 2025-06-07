@@ -36,7 +36,7 @@
 31  - E - Cipher/decipher text (more than one from https://rumkin.com/tools/cipher/) ( )
 32  - M - Simple paint program ( )
 33  - M - Stenography in images ( )
-34  - E - Given a directory, recursively search its subdirectories for the smallest and largest files; print their full path+name+size ( )
+34  - E - Given a directory, recursively search its subdirectories for the smallest and largest files; print their full path+name+size (X)
 35  - M - Graphical analog clock ( )
 36  - M - Crossword game ( )
 37  - E - Palindrome checker ( )
